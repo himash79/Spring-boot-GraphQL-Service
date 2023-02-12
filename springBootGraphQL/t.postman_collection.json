@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "c005060a-b239-4268-bc3f-006197989547",
+		"name": "t",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23442275"
+	},
+	"item": [
+		{
+			"name": "localhost:8090/getAllCustomersGQL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\ngetAllCustomers{\r\nbody\r\n}\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8090/getAllCustomersGQL",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"getAllCustomersGQL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/saveCustomerGQL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\nsaveCustomer(id:\"0003\", email:\"test3\", nic:\"1233245r\"){\r\nid\r\nemail\r\nnic\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/saveCustomerGQL",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"saveCustomerGQL"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

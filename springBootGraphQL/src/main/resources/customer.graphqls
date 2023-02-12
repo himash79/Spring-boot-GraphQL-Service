@@ -1,0 +1,23 @@
+schema{
+query: Query
+}
+
+type Query{
+getAllCustomers : ResponseEntity
+saveCustomer(id: String, email: String, nic: String) : CustomerDto
+}
+
+type ResponseEntity{
+header: String
+body: String
+}
+
+type CustomerDto {
+id: String
+email: String
+nic: String
+}
+
+type Mutation {
+    saveCustomer(id: String, email: String, nic: String): CustomerDto
+}
